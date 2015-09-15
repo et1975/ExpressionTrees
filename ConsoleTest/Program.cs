@@ -18,7 +18,7 @@ namespace ConsoleTest
                 Enumerable.Range(0,10000)
                     .Select(i => (Expression<Func<T,bool>>)(t => t.x == i ))
                     .ToList();
-				Console.WriteLine("Ellapsed: {0}", sw.Elapsed);
+				Console.WriteLine("Elapsed: {0}", sw.Elapsed);
             }
         }
     }
